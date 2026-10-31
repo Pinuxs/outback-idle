@@ -6,6 +6,12 @@ An Australian-themed idle RPG, built step by step while learning HTML, CSS and J
 
 Playable mining screen implemented in plain HTML, CSS and JavaScript. Outback Idle is a working title.
 
+## Play online
+
+[Play Outback Idle](https://pinuxs.github.io/outback-idle/)
+
+GitHub Pages publishes automatically after each successful push to `main` using `.github/workflows/pages.yml`. Refresh the game after deployment completes to load changes. Pull requests run checks without deploying. Progress is stored separately in each browser, so local-file saves do not transfer to the hosted game.
+
 ## Run the game
 
 Download this repository using Code → Download ZIP, extract it and open `index.html` in your browser. No build step or dependencies are needed. For a consistent local-storage origin during development, run `python3 -m http.server 8000` from the project folder and visit http://localhost:8000.
