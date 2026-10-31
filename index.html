@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mining · Outback Idle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">◈</span><span>OUTBACK<small>I D L E</small></span></a>
+    <div class="camp"><span class="dot"></span> YOUR JOURNEY STARTS HERE</div>
+    <p class="nav-label">GATHER & CREATE</p>
+    <nav aria-label="Skills">
+      <a class="nav-item selected" href="#mining" aria-current="page"><span>⛏</span> Mining <b id="nav-level">1</b></a>
+      <div class="nav-item future"><span>♧</span> Woodcutting <small>Later</small></div>
+      <div class="nav-item future"><span>♨</span> Smelting <small>Later</small></div>
+      <div class="nav-item future"><span>⚒</span> Tool crafting <small>Later</small></div>
+      <div class="nav-item future"><span>⚔</span> Weapon crafting <small>Later</small></div>
+    </nav>
+    <p class="nav-label">YOUR CAMP</p>
+    <a class="nav-item" href="#inventory"><span>▣</span> Inventory <b id="inventory-total">0</b></a>
+    <div class="sidebar-note"><span>FROM THE GROUND UP</span><p>Ore becomes metal.<br>Metal becomes possibility.</p><small>Mining → Smelting → Crafting</small></div>
+    <div class="version">EARLY BUILD <span>v0.1</span></div>
+  </aside>
+  <main id="mining">
+    <header class="topbar"><span>THE OUTBACK <i>/</i> GATHERING <i>/</i> <strong>MINING</strong></span><span id="save-status">Local save ready</span></header>
+    <section class="hero">
+      <div class="landscape" aria-hidden="true"><div class="sun"></div><div class="ridge back"></div><div class="ridge front"></div></div>
+      <div class="hero-copy"><p class="eyebrow">01 / GATHERING SKILL</p><h1>A little dirt.<br>A lot of potential.</h1><p>Work the red earth. Learn your trade.<br>Build something better with every strike.</p><span class="location"><span class="dot"></span> RED EARTH DIGGINGS</span></div>
+      <div class="hero-tag">AUSTRALIAN IDLE ADVENTURE</div>
+    </section>
+    <section class="skill-summary" aria-label="Mining experience">
+      <div class="level-badge"><span id="level">1</span><small>LEVEL</small></div>
+      <div class="xp-block"><div class="xp-heading"><strong>Mining experience</strong><span id="xp-text">0 / 100 XP</span></div><progress id="xp-bar" max="100" value="0" aria-label="Experience towards next level"></progress><small id="unlock-text">Next discovery: Iron at level 2</small></div>
+      <div class="tool"><span>⛏</span><div><small>CURRENT TOOL</small><strong>Weathered pickaxe</strong><span>Standard mining speed</span></div></div>
+    </section>
+    <section class="activity" aria-label="Current activity"><span class="activity-icon">◷</span><div><strong id="activity-title">Ready when you are</strong><p id="activity-detail">Choose a deposit below to start mining.</p></div><button id="stop-button" class="quiet" disabled>Stop mining</button></section>
+    <div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT RESOURCE</p><h2>Mining deposits</h2></div><span>One active deposit at a time</span></div>
+    <section id="deposits" class="deposits" aria-label="Mining deposits"></section>
+    <section id="inventory" class="inventory"><div class="section-heading"><div><p class="eyebrow">BACK AT CAMP</p><h2>Your haul</h2></div><span>Materials for the next chapter</span></div><div id="inventory-items" class="inventory-items"></div><p class="inventory-note">Keep your ore. Smelting and crafting will put it to work in a future update.</p></section>
+    <footer><span id="message" role="status">Pick a deposit. Settle into the rhythm.</span><span>Progress saves on this browser · No offline rewards yet</span></footer>
+  </main>
+</body>
+</html>
